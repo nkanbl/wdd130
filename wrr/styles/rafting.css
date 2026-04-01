@@ -7,17 +7,22 @@ body {
     padding: 0;
 }
 
-header, footer {
+    header {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    padding: 10px 20px;
     background-color: #0099cc;
     color: white;
-    text-align: center;
-    padding: 20px 0;
 }
 
-section {
-    padding: 20px;
-    margin: 10px;
-    border-bottom: 1px solid #ccc;
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #0099cc;
+    color: white;
 }
 
 img {
@@ -25,4 +30,54 @@ img {
     height: auto;
     display: block;
     margin: 10px auto;
+}
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav a.active {
+    text-decoration: underline;
+}
+.adventure-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+.adventure-gallery figure {
+    width: 18%;
+    text-align: center;
+}
+
+.adventure-gallery img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.social {
+    display: flex;
+    gap: 10px;
+}
+
+.social img {
+    width: 30px;
+}
+
+.history {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
 }
